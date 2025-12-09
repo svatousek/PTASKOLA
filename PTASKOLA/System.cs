@@ -28,17 +28,18 @@ namespace PTASKOLA
 
         public bool Restart()
         {
+            Console.ForegroundColor = ConsoleColor.Red;
             if (_isRunning)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write("Restarting system ");
                 for (int i = 3; i > 0; i--)
                 {
                     Console.Write(". ");
                     Thread.Sleep(1000);
                 }
-                Console.ResetColor();
             }
+            else { Console.WriteLine("Cannot Restart system! (System is not running) ");  }
+            Console.ResetColor();
             Console.WriteLine();
             return false;
         }

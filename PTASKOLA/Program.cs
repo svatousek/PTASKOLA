@@ -17,7 +17,6 @@ internal class Program
 
     static void Add(ISystem system)
     {
-        Console.WriteLine();
         Console.WriteLine($"Představuje Vám System Name: {system.Name}, Version: {system.Version}, Number: {system.Number}");
         Console.WriteLine();
     }
