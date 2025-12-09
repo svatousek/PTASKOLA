@@ -37,6 +37,9 @@ namespace PTASKOLA
                     Console.Write(". ");
                     Thread.Sleep(1000);
                 }
+                Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("System restarted sucessfully");
             }
             else { Console.WriteLine("Cannot Restart system! (System is not running) ");  }
             Console.ResetColor();

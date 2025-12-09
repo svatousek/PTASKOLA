@@ -8,9 +8,9 @@ internal class Program
         ISystem system = new MySystem("TestSystem", 1, 100, false);
         system.Startup();
         system.ShowInfo();
+        system.Restart();
         system.Shutdown();
         system.ShowInfo();
-        system.Restart();
         Add(system);
 
     }
